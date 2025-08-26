@@ -26,14 +26,23 @@
       section {
         padding: 20px;
       }
-
+      .gallery-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .gallery-table img {
+        max-width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
       .gallery-table td {
+        padding: 15px;
+        vertical-align: top;
         border: 1px solid #ddd;
         text-align: center;
       }
       .buy-button {
         display: inline-block;
-
         margin-top: 8px;
         background-color: #8e28a7;
         color: white;
@@ -44,9 +53,9 @@
     </style>
   </head>
   <body>
-    <!-- A.1 Header -->
+    <!--Header -->
     <header>
-      <!-- Replace src with your actual banner image link -->
+      <!-- Banner image link -->
       <img
         src="images/Banner.png"
         alt="Shop Banner"
@@ -55,7 +64,7 @@
       <h1>Zenn Shop</h1>
     </header>
 
-    <!-- A.2 Navigation as Single-Page Anchors -->
+    <!--Navigation as Single-Page Anchors -->
     <nav>
       <a href="#home">Home</a>
       <a href="#shop-info">Shop Information</a>
@@ -63,7 +72,7 @@
       <a href="#footer">Footer</a>
     </nav>
 
-    <!-- A.3 Content 1 Shop Information -->
+    <!-- Shop Information -->
     <section id="shop-info">
       <h2>Zenn Shop</h2>
       <h5>Centro Borono, Tagudin Ilocos Sur</h5>
@@ -76,7 +85,7 @@
       <p>Monday–Saturday: 9:00 AM – 6:00 PM</p>
     </section>
 
-    <!-- A.4 Content 2 Shop Gallery -->
+    <!-- Shop Gallery -->
     <section id="gallery">
       <table class="gallery-table">
         <!-- Row 1 -->
@@ -266,7 +275,7 @@
       </table>
     </section>
 
-    <!-- A.5 Footer -->
+    <!-- Footer -->
     <footer id="footer">
       <p>Developed by: Ervin John A. Calvo</p>
       <p>BSCS 2B</p>
